@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		775EE4DDE77ACABA05D021A9 /* Pods_Pixelate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B377C4513994A9785BB1A5 /* Pods_Pixelate.framework */; };
+		B51BA1B32185B04100CD33FF /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51BA1B22185B04100CD33FF /* GalleryViewController.swift */; };
+		B53C63CC2178709500266E35 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C63CB2178709500266E35 /* Alert.swift */; };
+		B53C63CE2178762400266E35 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C63CD2178762400266E35 /* UIView+Extension.swift */; };
+		B56F77DD2249319100B15FA1 /* PixelateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56F77DC2249319100B15FA1 /* PixelateData.swift */; };
+		B56F77DF2249456600B15FA1 /* PixelateDataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56F77DE2249456600B15FA1 /* PixelateDataCollectionViewCell.swift */; };
+		B56F77E32249546200B15FA1 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56F77E22249546200B15FA1 /* Loader.swift */; };
+		B5741626211C311E0075F23E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5741625211C311E0075F23E /* AppDelegate.swift */; };
+		B574162B211C311E0075F23E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5741629211C311E0075F23E /* Main.storyboard */; };
+		B574162E211C311E0075F23E /* Pixelate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B574162C211C311E0075F23E /* Pixelate.xcdatamodeld */; };
+		B5741630211C31200075F23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B574162F211C31200075F23E /* Assets.xcassets */; };
+		B5741633211C31200075F23E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5741631211C31200075F23E /* LaunchScreen.storyboard */; };
+		B574163E211C31200075F23E /* PixelateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B574163D211C31200075F23E /* PixelateTests.swift */; };
+		B5741649211C31200075F23E /* PixelateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5741648211C31200075F23E /* PixelateUITests.swift */; };
+		B5741658211C32F60075F23E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5741657211C32F60075F23E /* LoginViewController.swift */; };
+		B57BD092212BF6E600235E58 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BD091212BF6E600235E58 /* CameraController.swift */; };
+		B59C55B321393F2D005C05FE /* ImageConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C55B221393F2D005C05FE /* ImageConfiguration.swift */; };
+		B59C55B521393F47005C05FE /* Pixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C55B421393F47005C05FE /* Pixel.swift */; };
+		B59C55B721393F57005C05FE /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C55B621393F57005C05FE /* Dimension.swift */; };
+		B59C55B921393F61005C05FE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C55B821393F61005C05FE /* Location.swift */; };
+		B59C55BC213CFB1F005C05FE /* NetworkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C55BB213CFB1F005C05FE /* NetworkFactory.swift */; };
+		B59C55BE213CFB5B005C05FE /* MyNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C55BD213CFB5B005C05FE /* MyNetworkClient.swift */; };
+		B59C55C1213CFC2C005C05FE /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C55C0213CFC2C005C05FE /* Dictionary+Extension.swift */; };
+		B59C55C3213CFEF8005C05FE /* ModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C55C2213CFEF8005C05FE /* ModelFactory.swift */; };
+		B59C55C6213CFF48005C05FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C55C5213CFF48005C05FE /* Constants.swift */; };
+		B59C55C8213D04C1005C05FE /* EditImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C55C7213D04C1005C05FE /* EditImageViewController.swift */; };
+		B59C55CA213D11D6005C05FE /* AnyPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C55C9213D11D6005C05FE /* AnyPayload.swift */; };
+		B59C55CC213D245B005C05FE /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C55CB213D245B005C05FE /* UIDevice+Extension.swift */; };
+		B5B1498A21466CDE009D2989 /* Formatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1498921466CDE009D2989 /* Formatter+Extension.swift */; };
+		B5C3DABB2225B14D003BFD4A /* MyDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3DABA2225B14D003BFD4A /* MyDevice.swift */; };
+		B5C3DABD2225B302003BFD4A /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3DABC2225B302003BFD4A /* InitialViewController.swift */; };
+		B5FEB5BC2121576000A29D50 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FEB5BB2121576000A29D50 /* CameraViewController.swift */; };
+		C5648ABB9D4B303C2626D776 /* Pods_PixelateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3A28A48E7207ABA35F7AD0 /* Pods_PixelateTests.framework */; };
+		C9A3F80DBB49327689C7758C /* Pods_PixelateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88D4D958AF55F2A4B411DB5 /* Pods_PixelateUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B574163A211C31200075F23E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B574161A211C311E0075F23E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5741621211C311E0075F23E;
+			remoteInfo = Pixelate;
+		};
+		B5741645211C31200075F23E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B574161A211C311E0075F23E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5741621211C311E0075F23E;
+			remoteInfo = Pixelate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D4F97F618C1710FCE44A2DA /* Pods-Pixelate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixelate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pixelate/Pods-Pixelate.debug.xcconfig"; sourceTree = "<group>"; };
+		72435FFDC67F98FB0B25DF24 /* Pods-PixelateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PixelateTests/Pods-PixelateTests.release.xcconfig"; sourceTree = "<group>"; };
+		86B377C4513994A9785BB1A5 /* Pods_Pixelate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixelate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F0F8A319BC0DA71AF18051 /* Pods-Pixelate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pixelate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pixelate/Pods-Pixelate.release.xcconfig"; sourceTree = "<group>"; };
+		8C7D14FCA4C8CAE5996D3E8B /* Pods-PixelateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelateUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PixelateUITests/Pods-PixelateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F3A28A48E7207ABA35F7AD0 /* Pods_PixelateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1783B1D362500BDE91E3915 /* Pods-PixelateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PixelateTests/Pods-PixelateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B51BA1B22185B04100CD33FF /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		B53C63CB2178709500266E35 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		B53C63CD2178762400266E35 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B56F77DC2249319100B15FA1 /* PixelateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelateData.swift; sourceTree = "<group>"; };
+		B56F77DE2249456600B15FA1 /* PixelateDataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelateDataCollectionViewCell.swift; sourceTree = "<group>"; };
+		B56F77E22249546200B15FA1 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		B5741622211C311E0075F23E /* Pixelate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pixelate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5741625211C311E0075F23E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B574162A211C311E0075F23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B574162D211C311E0075F23E /* Pixelate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pixelate.xcdatamodel; sourceTree = "<group>"; };
+		B574162F211C31200075F23E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5741632211C31200075F23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5741634211C31200075F23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5741639211C31200075F23E /* PixelateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B574163D211C31200075F23E /* PixelateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelateTests.swift; sourceTree = "<group>"; };
+		B574163F211C31200075F23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5741644211C31200075F23E /* PixelateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5741648211C31200075F23E /* PixelateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelateUITests.swift; sourceTree = "<group>"; };
+		B574164A211C31200075F23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5741657211C32F60075F23E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B57BD091212BF6E600235E58 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		B59C55B221393F2D005C05FE /* ImageConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConfiguration.swift; sourceTree = "<group>"; };
+		B59C55B421393F47005C05FE /* Pixel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
+		B59C55B621393F57005C05FE /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		B59C55B821393F61005C05FE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B59C55BB213CFB1F005C05FE /* NetworkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFactory.swift; sourceTree = "<group>"; };
+		B59C55BD213CFB5B005C05FE /* MyNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNetworkClient.swift; sourceTree = "<group>"; };
+		B59C55C0213CFC2C005C05FE /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		B59C55C2213CFEF8005C05FE /* ModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFactory.swift; sourceTree = "<group>"; };
+		B59C55C5213CFF48005C05FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B59C55C7213D04C1005C05FE /* EditImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditImageViewController.swift; sourceTree = "<group>"; };
+		B59C55C9213D11D6005C05FE /* AnyPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyPayload.swift; sourceTree = "<group>"; };
+		B59C55CB213D245B005C05FE /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		B5B1498921466CDE009D2989 /* Formatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Extension.swift"; sourceTree = "<group>"; };
+		B5C3DABA2225B14D003BFD4A /* MyDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDevice.swift; sourceTree = "<group>"; };
+		B5C3DABC2225B302003BFD4A /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		B5FEB5BB2121576000A29D50 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		C88D4D958AF55F2A4B411DB5 /* Pods_PixelateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD66BA4367B86BECDD927F3 /* Pods-PixelateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PixelateUITests/Pods-PixelateUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B574161F211C311E0075F23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775EE4DDE77ACABA05D021A9 /* Pods_Pixelate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5741636211C31200075F23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5648ABB9D4B303C2626D776 /* Pods_PixelateTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5741641211C31200075F23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A3F80DBB49327689C7758C /* Pods_PixelateUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABDD8EA23F04099455AAE764 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D4F97F618C1710FCE44A2DA /* Pods-Pixelate.debug.xcconfig */,
+				87F0F8A319BC0DA71AF18051 /* Pods-Pixelate.release.xcconfig */,
+				A1783B1D362500BDE91E3915 /* Pods-PixelateTests.debug.xcconfig */,
+				72435FFDC67F98FB0B25DF24 /* Pods-PixelateTests.release.xcconfig */,
+				8C7D14FCA4C8CAE5996D3E8B /* Pods-PixelateUITests.debug.xcconfig */,
+				FBD66BA4367B86BECDD927F3 /* Pods-PixelateUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5741619211C311E0075F23E = {
+			isa = PBXGroup;
+			children = (
+				B5741624211C311E0075F23E /* Pixelate */,
+				B574163C211C31200075F23E /* PixelateTests */,
+				B5741647211C31200075F23E /* PixelateUITests */,
+				B5741623211C311E0075F23E /* Products */,
+				ABDD8EA23F04099455AAE764 /* Pods */,
+				F2FAB8E51D0CA858949B1773 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5741623211C311E0075F23E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5741622211C311E0075F23E /* Pixelate.app */,
+				B5741639211C31200075F23E /* PixelateTests.xctest */,
+				B5741644211C31200075F23E /* PixelateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5741624211C311E0075F23E /* Pixelate */ = {
+			isa = PBXGroup;
+			children = (
+				B59C55BF213CFC1E005C05FE /* Extensions */,
+				B59C55C4213CFF3E005C05FE /* Utility */,
+				B59C55BA213A8A69005C05FE /* Networking */,
+				B59C55B121393F21005C05FE /* Object Coder */,
+				B57BD090212BF6D000235E58 /* Views */,
+				B5741656211C32CC0075F23E /* View Controllers */,
+				B5741625211C311E0075F23E /* AppDelegate.swift */,
+				B5741629211C311E0075F23E /* Main.storyboard */,
+				B574162F211C31200075F23E /* Assets.xcassets */,
+				B5741631211C31200075F23E /* LaunchScreen.storyboard */,
+				B5741634211C31200075F23E /* Info.plist */,
+				B574162C211C311E0075F23E /* Pixelate.xcdatamodeld */,
+			);
+			path = Pixelate;
+			sourceTree = "<group>";
+		};
+		B574163C211C31200075F23E /* PixelateTests */ = {
+			isa = PBXGroup;
+			children = (
+				B574163D211C31200075F23E /* PixelateTests.swift */,
+				B574163F211C31200075F23E /* Info.plist */,
+			);
+			path = PixelateTests;
+			sourceTree = "<group>";
+		};
+		B5741647211C31200075F23E /* PixelateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5741648211C31200075F23E /* PixelateUITests.swift */,
+				B574164A211C31200075F23E /* Info.plist */,
+			);
+			path = PixelateUITests;
+			sourceTree = "<group>";
+		};
+		B5741656211C32CC0075F23E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5741657211C32F60075F23E /* LoginViewController.swift */,
+				B5FEB5BB2121576000A29D50 /* CameraViewController.swift */,
+				B59C55C7213D04C1005C05FE /* EditImageViewController.swift */,
+				B51BA1B22185B04100CD33FF /* GalleryViewController.swift */,
+				B5C3DABC2225B302003BFD4A /* InitialViewController.swift */,
+				B56F77DE2249456600B15FA1 /* PixelateDataCollectionViewCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B57BD090212BF6D000235E58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B57BD091212BF6E600235E58 /* CameraController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B59C55B121393F21005C05FE /* Object Coder */ = {
+			isa = PBXGroup;
+			children = (
+				B59C55B221393F2D005C05FE /* ImageConfiguration.swift */,
+				B59C55B421393F47005C05FE /* Pixel.swift */,
+				B59C55B621393F57005C05FE /* Dimension.swift */,
+				B59C55B821393F61005C05FE /* Location.swift */,
+				B59C55C9213D11D6005C05FE /* AnyPayload.swift */,
+				B56F77DC2249319100B15FA1 /* PixelateData.swift */,
+			);
+			path = "Object Coder";
+			sourceTree = "<group>";
+		};
+		B59C55BA213A8A69005C05FE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B59C55BB213CFB1F005C05FE /* NetworkFactory.swift */,
+				B59C55BD213CFB5B005C05FE /* MyNetworkClient.swift */,
+				B59C55C2213CFEF8005C05FE /* ModelFactory.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B59C55BF213CFC1E005C05FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B59C55C0213CFC2C005C05FE /* Dictionary+Extension.swift */,
+				B59C55CB213D245B005C05FE /* UIDevice+Extension.swift */,
+				B5B1498921466CDE009D2989 /* Formatter+Extension.swift */,
+				B53C63CD2178762400266E35 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B59C55C4213CFF3E005C05FE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B59C55C5213CFF48005C05FE /* Constants.swift */,
+				B53C63CB2178709500266E35 /* Alert.swift */,
+				B5C3DABA2225B14D003BFD4A /* MyDevice.swift */,
+				B56F77E22249546200B15FA1 /* Loader.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F2FAB8E51D0CA858949B1773 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86B377C4513994A9785BB1A5 /* Pods_Pixelate.framework */,
+				9F3A28A48E7207ABA35F7AD0 /* Pods_PixelateTests.framework */,
+				C88D4D958AF55F2A4B411DB5 /* Pods_PixelateUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5741621211C311E0075F23E /* Pixelate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B574164D211C31200075F23E /* Build configuration list for PBXNativeTarget "Pixelate" */;
+			buildPhases = (
+				21016A0367DF06651641D1E2 /* [CP] Check Pods Manifest.lock */,
+				B574161E211C311E0075F23E /* Sources */,
+				B574161F211C311E0075F23E /* Frameworks */,
+				B5741620211C311E0075F23E /* Resources */,
+				CB410037C7C8BBF8C190559A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pixelate;
+			productName = Pixelate;
+			productReference = B5741622211C311E0075F23E /* Pixelate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5741638211C31200075F23E /* PixelateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5741650211C31200075F23E /* Build configuration list for PBXNativeTarget "PixelateTests" */;
+			buildPhases = (
+				9F4DAEE599A0F42044344A62 /* [CP] Check Pods Manifest.lock */,
+				B5741635211C31200075F23E /* Sources */,
+				B5741636211C31200075F23E /* Frameworks */,
+				B5741637211C31200075F23E /* Resources */,
+				56B800612D284C2A3E1EB22D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B574163B211C31200075F23E /* PBXTargetDependency */,
+			);
+			name = PixelateTests;
+			productName = PixelateTests;
+			productReference = B5741639211C31200075F23E /* PixelateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5741643211C31200075F23E /* PixelateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5741653211C31200075F23E /* Build configuration list for PBXNativeTarget "PixelateUITests" */;
+			buildPhases = (
+				BAA83AB1AB15B08E8B89683F /* [CP] Check Pods Manifest.lock */,
+				B5741640211C31200075F23E /* Sources */,
+				B5741641211C31200075F23E /* Frameworks */,
+				B5741642211C31200075F23E /* Resources */,
+				BFABDCAD38D989B61616402C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5741646211C31200075F23E /* PBXTargetDependency */,
+			);
+			name = PixelateUITests;
+			productName = PixelateUITests;
+			productReference = B5741644211C31200075F23E /* PixelateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B574161A211C311E0075F23E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Taneja-Mac";
+				TargetAttributes = {
+					B5741621211C311E0075F23E = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+					B5741638211C31200075F23E = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						TestTargetID = B5741621211C311E0075F23E;
+					};
+					B5741643211C31200075F23E = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						TestTargetID = B5741621211C311E0075F23E;
+					};
+				};
+			};
+			buildConfigurationList = B574161D211C311E0075F23E /* Build configuration list for PBXProject "Pixelate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5741619211C311E0075F23E;
+			productRefGroup = B5741623211C311E0075F23E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5741621211C311E0075F23E /* Pixelate */,
+				B5741638211C31200075F23E /* PixelateTests */,
+				B5741643211C31200075F23E /* PixelateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5741620211C311E0075F23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5741633211C31200075F23E /* LaunchScreen.storyboard in Resources */,
+				B5741630211C31200075F23E /* Assets.xcassets in Resources */,
+				B574162B211C311E0075F23E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5741637211C31200075F23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5741642211C31200075F23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21016A0367DF06651641D1E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pixelate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56B800612D284C2A3E1EB22D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PixelateTests/Pods-PixelateTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DataStoreKit/DataStoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Gallery/Gallery.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftLoader/SwiftLoader.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DataStoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gallery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLoader.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PixelateTests/Pods-PixelateTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F4DAEE599A0F42044344A62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PixelateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAA83AB1AB15B08E8B89683F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PixelateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFABDCAD38D989B61616402C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PixelateUITests/Pods-PixelateUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DataStoreKit/DataStoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Gallery/Gallery.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftLoader/SwiftLoader.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DataStoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gallery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLoader.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PixelateUITests/Pods-PixelateUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB410037C7C8BBF8C190559A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pixelate/Pods-Pixelate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DataStoreKit/DataStoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Gallery/Gallery.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftLoader/SwiftLoader.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DataStoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gallery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLoader.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pixelate/Pods-Pixelate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B574161E211C311E0075F23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59C55B721393F57005C05FE /* Dimension.swift in Sources */,
+				B59C55B521393F47005C05FE /* Pixel.swift in Sources */,
+				B59C55B321393F2D005C05FE /* ImageConfiguration.swift in Sources */,
+				B56F77DD2249319100B15FA1 /* PixelateData.swift in Sources */,
+				B59C55C3213CFEF8005C05FE /* ModelFactory.swift in Sources */,
+				B59C55BC213CFB1F005C05FE /* NetworkFactory.swift in Sources */,
+				B53C63CC2178709500266E35 /* Alert.swift in Sources */,
+				B5741658211C32F60075F23E /* LoginViewController.swift in Sources */,
+				B59C55BE213CFB5B005C05FE /* MyNetworkClient.swift in Sources */,
+				B59C55B921393F61005C05FE /* Location.swift in Sources */,
+				B59C55CC213D245B005C05FE /* UIDevice+Extension.swift in Sources */,
+				B59C55C8213D04C1005C05FE /* EditImageViewController.swift in Sources */,
+				B5B1498A21466CDE009D2989 /* Formatter+Extension.swift in Sources */,
+				B5FEB5BC2121576000A29D50 /* CameraViewController.swift in Sources */,
+				B5C3DABD2225B302003BFD4A /* InitialViewController.swift in Sources */,
+				B57BD092212BF6E600235E58 /* CameraController.swift in Sources */,
+				B574162E211C311E0075F23E /* Pixelate.xcdatamodeld in Sources */,
+				B5C3DABB2225B14D003BFD4A /* MyDevice.swift in Sources */,
+				B51BA1B32185B04100CD33FF /* GalleryViewController.swift in Sources */,
+				B59C55C6213CFF48005C05FE /* Constants.swift in Sources */,
+				B59C55CA213D11D6005C05FE /* AnyPayload.swift in Sources */,
+				B5741626211C311E0075F23E /* AppDelegate.swift in Sources */,
+				B56F77E32249546200B15FA1 /* Loader.swift in Sources */,
+				B53C63CE2178762400266E35 /* UIView+Extension.swift in Sources */,
+				B56F77DF2249456600B15FA1 /* PixelateDataCollectionViewCell.swift in Sources */,
+				B59C55C1213CFC2C005C05FE /* Dictionary+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5741635211C31200075F23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B574163E211C31200075F23E /* PixelateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5741640211C31200075F23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5741649211C31200075F23E /* PixelateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B574163B211C31200075F23E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5741621211C311E0075F23E /* Pixelate */;
+			targetProxy = B574163A211C31200075F23E /* PBXContainerItemProxy */;
+		};
+		B5741646211C31200075F23E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5741621211C311E0075F23E /* Pixelate */;
+			targetProxy = B5741645211C31200075F23E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5741629211C311E0075F23E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B574162A211C311E0075F23E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5741631211C31200075F23E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5741632211C31200075F23E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B574164B211C31200075F23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B574164C211C31200075F23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B574164E211C31200075F23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D4F97F618C1710FCE44A2DA /* Pods-Pixelate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WB3ERZF5N3;
+				INFOPLIST_FILE = Pixelate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vistaura.pixelate-cam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B574164F211C31200075F23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87F0F8A319BC0DA71AF18051 /* Pods-Pixelate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WB3ERZF5N3;
+				INFOPLIST_FILE = Pixelate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vistaura.pixelate-cam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B5741651211C31200075F23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1783B1D362500BDE91E3915 /* Pods-PixelateTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WB3ERZF5N3;
+				INFOPLIST_FILE = PixelateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vistaura.PixelateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixelate.app/Pixelate";
+			};
+			name = Debug;
+		};
+		B5741652211C31200075F23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72435FFDC67F98FB0B25DF24 /* Pods-PixelateTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WB3ERZF5N3;
+				INFOPLIST_FILE = PixelateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vistaura.PixelateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixelate.app/Pixelate";
+			};
+			name = Release;
+		};
+		B5741654211C31200075F23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C7D14FCA4C8CAE5996D3E8B /* Pods-PixelateUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WB3ERZF5N3;
+				INFOPLIST_FILE = PixelateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vistaura.PixelateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pixelate;
+			};
+			name = Debug;
+		};
+		B5741655211C31200075F23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBD66BA4367B86BECDD927F3 /* Pods-PixelateUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WB3ERZF5N3;
+				INFOPLIST_FILE = PixelateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vistaura.PixelateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pixelate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B574161D211C311E0075F23E /* Build configuration list for PBXProject "Pixelate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B574164B211C31200075F23E /* Debug */,
+				B574164C211C31200075F23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B574164D211C31200075F23E /* Build configuration list for PBXNativeTarget "Pixelate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B574164E211C31200075F23E /* Debug */,
+				B574164F211C31200075F23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5741650211C31200075F23E /* Build configuration list for PBXNativeTarget "PixelateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5741651211C31200075F23E /* Debug */,
+				B5741652211C31200075F23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5741653211C31200075F23E /* Build configuration list for PBXNativeTarget "PixelateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5741654211C31200075F23E /* Debug */,
+				B5741655211C31200075F23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B574162C211C311E0075F23E /* Pixelate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B574162D211C311E0075F23E /* Pixelate.xcdatamodel */,
+			);
+			currentVersion = B574162D211C311E0075F23E /* Pixelate.xcdatamodel */;
+			path = Pixelate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B574161A211C311E0075F23E /* Project object */;
+}

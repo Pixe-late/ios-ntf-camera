@@ -1,0 +1,25 @@
+# Uncomment this line to define a global platform for your project
+#drag and drop the static library (here libGoogleAnalyticsServices.a) from the finder to the link #Binary with Libraries section under the Build Phases of your Pods project.
+
+platform :ios, '10.0'
+use_frameworks!
+
+def shared_pods
+
+pod 'DataStoreKit', :git => 'git@github.com:poolmyride/DataStoreKit.git', :tag=> '3.0.5'
+pod 'ReachabilitySwift'
+pod 'Gallery'
+pod 'SwiftLoader'
+end
+
+target 'Pixelate' do
+	shared_pods
+end
+
+target 'PixelateTests' do
+	shared_pods
+end
+
+target 'PixelateUITests' do
+	shared_pods
+end
